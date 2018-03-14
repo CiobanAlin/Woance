@@ -1,0 +1,348 @@
+﻿<!DOCTYPE html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#222233"/>
+<style>
+    /*
+adminnnn
+*/
+/*
+profesionist
+optiune privat
+optiune club
+reamintire sms
+conectare facebook
+*/
+/*
+rotita + iconita domeniu
+[
+in bara sus / jos mobile
+]
+meniu
+client
+alege arie servicii
+alege serviciu*
+filtru
+-locatie apropiata
+-rating
+-pret
+alege profesionist
+alege data
+alege ora
+autentificare
+*/
+/*
+mobile
+@media screen and (max-width: 700px)
+x*3/4
+*/
+/* reset */
+body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: #d7cec7;
+}
+/* nav */
+.nav{
+  margin: 0;
+  width: 100%;
+  background-color: #76323f;
+    /*#96858F;*/
+  color: #f4f4f4;
+  box-shadow: 0 5px 12px 0 rgba(0,0,0,.15);
+}
+.navGrid{
+  max-width: 1200px;
+  padding: 20px 30px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 700px){
+.navGrid{
+    padding: calc(20px * 3 / 4) calc(30px * 3 / 4);
+  }
+}
+.logo{
+       padding: 10px 16px;
+   margin: 0 20px;
+  font-weight: 600;
+}
+@media screen and (max-width: 700px){
+.logo{
+    padding: calc(10px * 3 / 4) calc(16px * 3 / 4);
+  margin: calc(0 * 3 / 4) calc(20px * 3 / 4);
+  }
+}
+.rightButtons{
+  display: flex;
+  align-items: center;
+}
+.buttonOne{
+   padding: 10px 16px;
+   margin: 0 20px;
+  border: 1px solid ;
+  border-radius: 5px;
+  box-shadow: 0 5px 12px 0 rgba(0,0,0,.15);
+}
+@media screen and (max-width: 700px){
+.buttonOne{
+    padding: calc(10px * 3 / 4) calc(16px * 3 / 4);
+  margin: calc(0 * 3 / 4) calc(20px * 3 / 4);
+  }
+}
+.buttonNude{
+     padding: 10px 16px;
+   margin: 0 20px;
+}
+@media screen and (max-width: 700px){
+.buttonNude{
+    padding: calc(10px * 3 / 4) calc(16px * 3 / 4);
+  margin: calc(0 * 3 / 4) calc(20px * 3 / 4);
+  }
+}
+.searchSection{
+  max-width: 100%;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 700px){
+.searchSection{
+    padding: calc(40px * 3 / 4);
+  }
+}
+.searchBar{
+  width: calc(648px / 2);
+  height: 42px;
+  padding: 0 8px;
+  background-color: #f4f4f4;
+  color: #373737;
+  box-shadow: 0 5px 12px 0 rgba(0,0,0,.15);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 700px){
+.searchBar{
+  height: calc(42px * 3 / 4);
+    padding: calc(0px * 3 / 4) calc(8px * 3 / 4);
+  }
+}
+.buttonTwo{
+  padding: 10px 16px;
+  height: 42px;
+    display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #c09f80;
+  color: #f4f4f4;
+    border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0 5px 12px 0 rgba(0,0,0,.15);
+}
+@media screen and (max-width: 700px){
+.buttonTwo{
+  height: calc(42px * 3 / 4);
+    padding: calc(10px * 3 / 4) calc(16px * 3 / 4);
+  }
+}
+.artistCards{
+ max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+.artistCard{
+  width: 100%;
+  max-width: 650px;
+    margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4f4f4;
+  box-shadow: 0 5px 12px 0 rgba(0,0,0,.15);
+  text-align: center;
+}
+@media screen and (max-width: 700px){
+ .artistCard{
+  justify-content: center;
+   margin-bottom: calc(40px * 3 / 4);
+  }
+  }
+.artistImage{
+  width: 286.656px;
+  height: 286.656px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #565656;
+  color: #f4f4f4;
+  box-shadow: 0 5px 12px 0 rgba(0,0,0,.15);
+  background-size: 100% 100%;
+}
+@media screen and (max-width: 700px){
+  .artistImage{
+    margin: auto;
+  width: calc(286.656px / 2);
+  height: calc(286.656px / 2);
+  }
+}
+.artistItems{
+  margin: auto;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  color: #565656;
+}
+@media screen and (max-width: 700px){
+  .artistItems{
+  padding: 20px;
+  }
+}
+.artistName-Location{
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+@media screen and (max-width: 700px){
+  .artistName-Location{
+  font-size: calc(24px * 3 / 4);
+  padding-bottom: calc(20px * 3 / 4);
+}
+}
+.bookingDescription{
+  font-size: 16px;
+  padding-bottom: 30px;
+}
+@media screen and (max-width: 700px){
+  .bookingDescription{
+  font-size: calc(16px * 3 / 4);
+  padding-bottom: calc(30px * 3 / 4);
+}
+}
+.buttonThird{
+  padding: 10px 16px;
+  height: 48px;
+    display: flex;
+  align-items: center;
+  box-sizing: border-box;
+background-color: #c09f80;
+  color: #f4f4f4;
+  border-radius: 5px;
+  box-shadow: 0 5px 12px 0 rgba(0,0,0,.15)
+}
+@media screen and (max-width: 700px){
+.buttonThird{
+    padding: calc(10px * 3 / 4) calc(16px * 3 / 4);
+  height: calc(48px * 3 / 4);
+  font-size: calc(16px * 3.5 / 4);
+  }
+}
+.buttonFour{
+     padding: 10px 16px;
+   margin: 0 20px;
+  margin-top: 20px;
+  text-decoration: underline;
+}
+@media screen and (max-width: 700px){
+.buttonFour{
+    padding: calc(10px * 3 / 4) calc(16px * 3 / 4);
+     margin: calc(0px * 3 / 4) calc(20px * 3 / 4);
+  margin-top: calc(20px * 3 / 4);
+  font-size: calc(16px * 3.5 / 4);
+  }
+}
+</style>
+</head>
+<body>
+<div class="nav">
+    <div class="navGrid">
+   <div class="logo">
+     Woance
+   </div>
+    
+   <div class="rightButtons">
+   <div class="buttonOne">
+     Inscriere
+   </div>
+    <div class="buttonNude">
+     Logare
+   </div>
+   </div>
+   </div>
+   </div>
+   
+   <div class="searchSection">
+   <div class="searchBar">
+     Cauta un profesionist
+   </div>
+   <div class="buttonTwo">
+     CAUTA
+   </div>
+   </div>
+   
+   <div class="artistCards">
+       <!--1-->
+   <div class="artistCard">
+     <div class="artistImage" 
+   style=" background-image: url('https://s3.eu-central-1.amazonaws.com/novabooker-uploads-eu-central/profile-images/large/59e92c222a25cf06318c5772') ">
+   <!--     imagine -->
+     </div>
+     
+     <div class="artistItems">
+     <div class="artistName-Location">
+           Robert Nicolae - Craiova
+     </div>
+     <div class="bookingDescription">
+   <!--       Programare-Serviciu
+         [ frizer ] -->
+       Programare rapida
+     </div>
+     <div class="buttonThird">
+   <!--       Serviciul cel mai cautat
+       buton [+ pret(35 Lei)] -->
+       Tuns barbat - 35 Lei 
+     </div>
+     <div class="buttonFour">
+         Vezi toate serviciile
+     </div>
+     </div>
+   </div>
+     <!--2-->
+     <div class="artistCard">
+     <div class="artistImage" 
+   style=" background-image: url('https://s3.eu-central-1.amazonaws.com/novabooker-uploads-eu-central/profile-images/large/59efb0a649c895187f62b2ce') ">
+   <!--     imagine -->
+     </div>
+     
+     <div class="artistItems">
+     <div class="artistName-Location">
+           Andy Cioabla - Craiova
+     </div>
+     <div class="bookingDescription">
+   <!--       Programare-Serviciu
+         [ frizer ] -->
+       Programare rapida
+     </div>
+     <div class="buttonThird">
+   <!--       Serviciul cel mai cautat
+       buton [+ pret(35 Lei)] -->
+       Tuns barbat - 40-50 Lei 
+     </div>
+     <div class="buttonFour">
+         Vezi toate serviciile
+     </div>
+     </div>
+   </div>
+   </div>
+
+</body>
+</html>
